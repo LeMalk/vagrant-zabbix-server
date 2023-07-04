@@ -1,5 +1,6 @@
 Vagrant.configure("2") do |config|
     config.vm.box = "ubuntu/bionic64"
+    config.vm.network "public_network", bridge: "Intel(R) Wireless-AC 9560"   # Modo bridge
     
     config.vm.provider "virtualbox" do |vb|
       vb.memory = "2048"
